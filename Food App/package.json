@@ -1,0 +1,28 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "This is Namsate React by Akshay Saini",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajanSoni0/React-With-Akshay-Sir.git"
+  },
+  "keywords": [],
+  "author": "Rajan Soni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rajanSoni0/React-With-Akshay-Sir/issues"
+  },
+  "homepage": "https://github.com/rajanSoni0/React-With-Akshay-Sir#readme",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  }
+}
