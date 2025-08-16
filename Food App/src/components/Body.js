@@ -33,7 +33,7 @@ const Body = () => {
         }
     };
 
-    return listOfRes.length === 0 ? <Shimmer /> : (
+    return filteredList.length === 0 ? <Shimmer /> : (
         <div className="body">
             <div className="filter">
                 <div className="search">
@@ -42,14 +42,14 @@ const Body = () => {
                     }}/>
                     <button className="search-btn" onClick={() => {
                         const filteredList = listOfRes.filter((res) => res.info.name.toLowerCase().includes(searchText.toLowerCase()));
-                        setlistOfRes(filteredList);
+                        setfilteredList(filteredList);
                     }}>Search</button>
                 </div>
                 <button className="filter-btn" onClick={() => {
                     const filteredList = listOfRes.filter(
-                        (res) => res.info.avgRating > 4.3
+                        (res) => res.info.avgRating > 4.2
                     );
-                    setlistOfRes(filteredList)
+                    setfilteredList(filteredList)
                 }
                 }>Top Rated Restaurants</button>
             </div>
