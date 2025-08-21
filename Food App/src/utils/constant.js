@@ -2,7 +2,7 @@ export const CDN_URL = 'https://media-assets.swiggy.com/swiggy/image/upload/fl_l
 
 export const LOGO_URL = "https://png.pngtree.com/png-vector/20230217/ourmid/pngtree-food-logo-design-for-restaurant-and-business-png-image_6604922.png";
 
-export const API_URL = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=26.46310&lng=80.34790";
+export const API_URL = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.4951&lng=77.0886&page_type=DESKTOP_WEB_LISTING";
 
 export const MENU_URL = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=26.46310&lng=80.34790&restaurantId=";
 
