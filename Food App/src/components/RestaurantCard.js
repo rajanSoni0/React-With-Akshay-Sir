@@ -11,7 +11,8 @@ const RestaurantCard = (props) => {
         costForTwo,
         locality,
         avgRating,
-        sla: { deliveryTime } = {}
+        sla: { slaString } = {},
+        aggregatedDiscountInfoV3: {header, subHeader} = {}
     } = listOfRes?.info;
 
     return (
@@ -25,14 +26,14 @@ const RestaurantCard = (props) => {
                     />
 
                     <div className="absolute bottom-0 left-0 w-full h-12 bg-gradient-to-t from-black/90 to-transparent rounded-b-2xl"></div>
-                    <h4 className="absolute bottom-2 left-3 text-white font-semibold uppercase text-xl"> {costForTwo} </h4>
+                    <h4 className="absolute bottom-2 left-3 text-white font-semibold text-xl"> {header+" " + subHeader} </h4>
 
 
                 </div>
 
                 <div className="m-2">
                     <h3 className="font-bold text-[18px] w-full truncate"> {name} </h3>
-                    <h4> <span className="text-green-600">⭐</span> {avgRating}• {deliveryTime} mins </h4>
+                    <h4 className="font-semibold">⭐ {avgRating}• {slaString}</h4>
                     <h4 className="w-full truncate text-gray-500"> {cuisines?.join(", ")} </h4>
                     <h4 className="text-gray-500">{locality}</h4>
                 </div>
